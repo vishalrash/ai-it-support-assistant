@@ -1,0 +1,27 @@
+
+[
+    {
+        "ticket_id": "TKT1001",
+        "employee_name": "Arun",
+        "issue_description": "Unable to connect to company VPN",
+        "status": "Open",
+        "priority": "High",
+        "created_at": "2026-11-10 09:30:00"
+    },
+    {
+        "ticket_id": "TKT1002",
+        "employee_name": "Priya",
+        "issue_description": "Company email is not syncing",
+        "status": "In Progress",
+        "priority": "Medium",
+        "created_at": "2026-11-10 10:15:00"
+    },
+    {
+        "ticket_id": "TKT1003",
+        "employee_name": "Rahul",
+        "issue_description": "Laptop battery draining quickly",
+        "status": "Resolved",
+        "priority": "Low",
+        "created_at": "2026-11-11 11:00:00"
+    }
+]
