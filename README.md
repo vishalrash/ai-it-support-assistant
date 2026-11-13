@@ -19,18 +19,17 @@ The assistant helps users troubleshoot common IT issues, retrieve support ticket
 
 ## Technology Stack
 
-| Component | Technology |
-|---|---|
-| Programming Language | Python 3.11 |
-| LLM | Qwen3 8B |
-| Local LLM Runtime | Ollama |
-| AI Framework | LangChain |
-| Agent Workflow | LangGraph |
-| Vector Database | ChromaDB |
-| Embedding Model | all-MiniLM-L6-v2 |
-| Document Processing | PyPDF |
-| Ticket Storage | JSON |
-| Testing | Pytest |
+
+Programming Language = Python 3.11
+LLM = Qwen3 8B
+Local LLM Runtime = Ollama
+AI Framework = LangChain
+Agent Workflow = LangGraph
+Vector Database = ChromaDB
+Embedding Model = all-MiniLM-L6-v2
+Document Processing = PyPDF
+Ticket Storage = JSON
+Testing = Pytest
 
 ## Architecture
 
@@ -130,7 +129,7 @@ ai-it-support-assistant/
 ### 1. Clone the repository
 
 ```bash
-git clone <YOUR_GITHUB_REPOSITORY_URL>
+git clone <https://github.com/vishalrash/ai-it-support-assistant>
 cd ai-it-support-assistant
 ```
 

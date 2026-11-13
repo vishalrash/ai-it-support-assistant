@@ -10,3 +10,4 @@ pytest
 langchain-ollama
 sentence-transformers
 langchain-huggingface
+streamlit
