@@ -1,4 +1,3 @@
-
 import json
 from pathlib import Path
 from datetime import datetime
@@ -7,127 +6,79 @@ try:
     from .retriever import get_retriever
 except ImportError:
     from retriever import get_retriever
-
-
-# Initialize the knowledge base retriever
 knowledge_retriever = get_retriever()
-
-
-# --------------------------------------------------
-# 1. KNOWLEDGE BASE SEARCH
-# --------------------------------------------------
-
 def search_knowledge_base(query: str) -> str:
     """
     Search the internal IT knowledge base
     and return relevant document information.
     """
-
     if not isinstance(query, str) or not query.strip():
         raise ValueError("Search query cannot be empty.")
-
     try:
         results = knowledge_retriever.invoke(query)
-
         if not results:
             return "No relevant information found in the knowledge base."
-
         output = []
-
         for index, document in enumerate(results, start=1):
             source = document.metadata.get(
                 "source", "Unknown source"
             )
-
             output.append(
                 f"Result {index}\n"
                 f"Source: {source}\n"
                 f"Content:\n{document.page_content}"
             )
-
         return "\n\n".join(output)
-
     except ValueError:
         raise
-
     except Exception as error:
         raise RuntimeError(
             f"Knowledge base search failed: {error}"
         ) from error
-
-
-# --------------------------------------------------
-# 2. GET STRUCTURED TICKET DETAILS (FOR STREAMLIT UI)
-# --------------------------------------------------
-
 def get_ticket_details(ticket_id: str) -> dict | None:
     """
     Retrieve structured ticket details using its ticket ID.
-
     Returns:
         dict: Ticket information if found.
         None: If the ticket does not exist.
     """
-
     if not isinstance(ticket_id, str) or not ticket_id.strip():
         raise ValueError("Ticket ID cannot be empty.")
-
     ticket_id = ticket_id.strip().upper()
-
     ticket_file = Path("data/tickets.json")
-
     if not ticket_file.exists():
         raise FileNotFoundError("Ticket database not found.")
-
     try:
         with ticket_file.open("r", encoding="utf-8") as file:
             tickets = json.load(file)
-
         if not isinstance(tickets, list):
             raise RuntimeError(
                 "Ticket database must contain a JSON list."
             )
-
         for ticket in tickets:
-
             if not isinstance(ticket, dict):
                 raise RuntimeError(
                     "Ticket record has an invalid structure."
                 )
-
             stored_ticket_id = ticket.get("ticket_id")
-
             if not isinstance(stored_ticket_id, str):
                 raise RuntimeError(
                     "Ticket record has an invalid ticket ID."
                 )
-
             if stored_ticket_id.upper() == ticket_id:
                 return ticket
-
         return None
-
     except json.JSONDecodeError as error:
         raise RuntimeError(
             "Ticket database contains invalid JSON."
         ) from error
-
-
-
-# --------------------------------------------------
-# 3. GET TICKET STATUS (FOR LANGGRAPH AGENT)
-# --------------------------------------------------
-
 def get_ticket_status(ticket_id: str) -> str:
     """
     Retrieve and format ticket status for the LangGraph agent.
     """
-
     ticket = get_ticket_details(ticket_id)
-
     if ticket is None:
         return f"No ticket found with ID: {ticket_id.strip().upper()}"
-
     return (
         f"Ticket ID: {ticket['ticket_id']}\n"
         f"Employee: {ticket.get('employee_name', 'Not provided')}\n"
@@ -136,64 +87,42 @@ def get_ticket_status(ticket_id: str) -> str:
         f"Priority: {ticket.get('priority', 'Not specified')}\n"
         f"Created At: {ticket.get('created_at', 'Not available')}"
     )
-
-
-# --------------------------------------------------
-# 4. CREATE SUPPORT TICKET
-# --------------------------------------------------
-
 def create_support_ticket(issue_description: str) -> str:
     """
     Create a new support ticket and save it to JSON.
     """
-
     if (
         not isinstance(issue_description, str)
         or not issue_description.strip()
     ):
         raise ValueError("Issue description cannot be empty.")
-
     issue_description = issue_description.strip()
-
     ticket_file = Path("data/tickets.json")
-
     ticket_file.parent.mkdir(
         parents=True,
         exist_ok=True
     )
-
     try:
-
         if ticket_file.exists():
-
             with ticket_file.open("r", encoding="utf-8") as file:
                 tickets = json.load(file)
-
         else:
             tickets = []
-
         if not isinstance(tickets, list):
             raise RuntimeError(
                 "Ticket database must contain a JSON list."
             )
-
         existing_ids = {
             ticket.get("ticket_id")
             for ticket in tickets
             if isinstance(ticket, dict)
         }
-
-        # Generate a unique ticket ID
         while True:
-
             ticket_id = (
                 f"TKT{uuid.uuid4().hex[:8].upper()}"
             )
-
             if ticket_id not in existing_ids:
                 break
-
-        # Create ticket record
         new_ticket = {
             "ticket_id": ticket_id,
             "employee_name": "Not provided",
@@ -204,13 +133,9 @@ def create_support_ticket(issue_description: str) -> str:
                 "%Y-%m-%d %H:%M:%S"
             )
         }
-
-        # Save ticket to JSON
         tickets.append(new_ticket)
-
         with ticket_file.open("w", encoding="utf-8") as file:
             json.dump(tickets, file, indent=4)
-
         return (
             "Support ticket created successfully!\n"
             f"Ticket ID: {ticket_id}\n"
@@ -218,7 +143,6 @@ def create_support_ticket(issue_description: str) -> str:
             "Status: Open\n"
             "Priority: Medium"
         )
-
     except json.JSONDecodeError as error:
         raise RuntimeError(
             "Ticket database contains invalid JSON."

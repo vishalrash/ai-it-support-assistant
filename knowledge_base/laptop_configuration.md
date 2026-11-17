@@ -1,12 +1,12 @@
-# Laptop Configuration and Troubleshooting Guide
 
-## 1. Overview
+
+
 
 This document explains the basic configuration and maintenance procedures for company laptops.
 
 A properly configured laptop helps employees work securely, access company resources, and maintain good system performance.
 
-## 2. Initial Laptop Setup
+
 
 When receiving a new company laptop, follow these steps:
 
@@ -22,7 +22,7 @@ When receiving a new company laptop, follow these steps:
 
 **Important:** Follow the organization's device enrollment and security instructions. Do not bypass company security configurations.
 
-## 3. Required Software and Configuration
+
 
 Employees may need the following software and settings:
 
@@ -36,11 +36,11 @@ Employees may need the following software and settings:
 
 Only install software approved by the IT department.
 
-## 4. Operating System Updates
+
 
 Keeping the operating system updated helps improve security, stability, and performance.
 
-### Update Procedure
+
 
 1. Open the operating system's Settings.
 2. Navigate to the Software Update or Windows Update section.
@@ -51,9 +51,9 @@ Keeping the operating system updated helps improve security, stability, and perf
 
 Employees should not disable automatic security updates without IT approval.
 
-## 5. Common Laptop Problems and Solutions
 
-### Problem 1: Laptop Running Slowly
+
+
 
 **Possible causes:**
 - Too many applications running simultaneously.
@@ -69,7 +69,7 @@ Employees should not disable automatic security updates without IT approval.
 5. Identify applications consuming excessive CPU or memory.
 6. Install pending approved updates.
 
-### Problem 2: Laptop Cannot Connect to Wi-Fi
+
 
 **Possible causes:**
 - Wi-Fi is disabled.
@@ -85,7 +85,7 @@ Employees should not disable automatic security updates without IT approval.
 5. Restart the laptop.
 6. Contact IT support if the problem continues.
 
-### Problem 3: Laptop Battery Draining Quickly
+
 
 **Possible causes:**
 - High screen brightness.
@@ -100,7 +100,7 @@ Employees should not disable automatic security updates without IT approval.
 4. Check battery usage statistics.
 5. Contact IT support if the battery performance remains poor.
 
-### Problem 4: Laptop Overheating
+
 
 **Possible causes:**
 - Blocked ventilation openings.
@@ -115,7 +115,7 @@ Employees should not disable automatic security updates without IT approval.
 4. Allow the laptop to cool down.
 5. Contact IT support if overheating continues.
 
-### Problem 5: Unable to Install Software
+
 
 **Possible causes:**
 - Missing administrator permissions.
@@ -130,7 +130,7 @@ Employees should not disable automatic security updates without IT approval.
 4. Request installation assistance from IT support.
 5. Do not bypass administrator restrictions.
 
-## 6. Laptop Security Guidelines
+
 
 - Lock your laptop whenever you leave your workstation.
 - Use strong account passwords.
@@ -141,7 +141,7 @@ Employees should not disable automatic security updates without IT approval.
 - Report lost or stolen company laptops immediately.
 - Do not share your company laptop with unauthorized users.
 
-## 7. Maintenance Recommendations
+
 
 - Restart the laptop periodically.
 - Keep sufficient storage space available.
@@ -150,7 +150,7 @@ Employees should not disable automatic security updates without IT approval.
 - Avoid exposing the laptop to excessive heat or moisture.
 - Report unusual hardware noises or repeated system crashes.
 
-## 8. Escalation Procedure
+
 
 If the troubleshooting steps do not resolve the issue, contact IT support.
 
@@ -164,6 +164,6 @@ Provide the following information:
 - Approximate time the issue started.
 - Troubleshooting steps already attempted.
 
-## 9. Important Note
+
 
 This document provides general laptop configuration and troubleshooting guidance. Organization-specific device enrollment procedures, approved software lists, administrator permissions, and security policies must be obtained from the IT department.

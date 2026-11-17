@@ -1,6 +1,6 @@
-# Printer Setup and Troubleshooting Guide
 
-## 1. Overview
+
+
 
 Printers are used by employees to print documents, reports, forms, and other business materials.
 
@@ -8,7 +8,7 @@ This document explains how to connect a printer to a computer and troubleshoot c
 
 Employees should use only printers approved and configured by the IT department.
 
-## 2. Printer Setup Requirements
+
 
 Before setting up a printer, ensure that:
 
@@ -20,7 +20,7 @@ Before setting up a printer, ensure that:
 - Your computer has the necessary printer driver.
 - You have permission to use the printer.
 
-## 3. Printer Installation Procedure
+
 
 Follow these general steps:
 
@@ -37,7 +37,7 @@ Follow these general steps:
 
 **Important:** If the printer is not detected, contact IT support for the correct printer configuration.
 
-## 4. How to Set a Default Printer
+
 
 To select a default printer:
 
@@ -50,9 +50,9 @@ To select a default printer:
 
 The exact steps may differ depending on the operating system.
 
-## 5. Common Printer Problems and Solutions
 
-### Problem 1: Printer Not Detected
+
+
 
 **Possible causes:**
 - Printer is powered off.
@@ -69,7 +69,7 @@ The exact steps may differ depending on the operating system.
 5. Check whether the correct printer driver is installed.
 6. Contact IT support if the printer is still not detected.
 
-### Problem 2: Documents Stuck in the Print Queue
+
 
 **Possible causes:**
 - Previous print job failed.
@@ -85,7 +85,7 @@ The exact steps may differ depending on the operating system.
 5. Try printing a test page.
 6. Contact IT support if the queue remains stuck.
 
-### Problem 3: Printer Showing Offline
+
 
 **Possible causes:**
 - Printer is powered off.
@@ -101,7 +101,7 @@ The exact steps may differ depending on the operating system.
 5. Check the printer status in Settings.
 6. Contact IT support if the printer remains offline.
 
-### Problem 4: Paper Jam
+
 
 **Possible causes:**
 - Paper loaded incorrectly.
@@ -119,7 +119,7 @@ The exact steps may differ depending on the operating system.
 7. Close all panels and restart the printer.
 8. Contact IT support if the paper cannot be removed safely.
 
-### Problem 5: Poor Print Quality
+
 
 **Possible causes:**
 - Low ink or toner.
@@ -136,7 +136,7 @@ The exact steps may differ depending on the operating system.
 5. Replace consumables only through the approved process.
 6. Contact IT support if print quality remains poor.
 
-### Problem 6: Printer Not Printing
+
 
 **Possible causes:**
 - Printer is offline.
@@ -155,7 +155,7 @@ The exact steps may differ depending on the operating system.
 6. Restart the printer and retry.
 7. Contact IT support if printing still fails.
 
-## 6. Printer Maintenance Guidelines
+
 
 - Keep the printer in a clean and ventilated area.
 - Use compatible paper.
@@ -165,7 +165,7 @@ The exact steps may differ depending on the operating system.
 - Follow manufacturer maintenance instructions.
 - Report unusual noises, repeated jams, or hardware damage.
 
-## 7. Printer Security Guidelines
+
 
 - Use only authorized office printers.
 - Collect printed confidential documents immediately.
@@ -174,7 +174,7 @@ The exact steps may differ depending on the operating system.
 - Follow company policies when printing confidential information.
 - Report suspicious printer activity to IT support.
 
-## 8. Escalation Procedure
+
 
 If the above troubleshooting steps do not resolve the problem, contact the IT support team.
 
@@ -190,6 +190,6 @@ Provide the following information:
 - Approximate time the issue started.
 - Troubleshooting steps already attempted.
 
-## 9. Important Note
+
 
 This document provides general printer setup and troubleshooting guidance. Organization-specific printer names, network addresses, driver packages, access permissions, and maintenance procedures must be obtained from the IT department.

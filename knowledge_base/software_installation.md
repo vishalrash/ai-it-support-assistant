@@ -1,6 +1,6 @@
-# Software Installation Guidelines
 
-## 1. Overview
+
+
 
 This document explains the procedures employees should follow when installing software on company laptops and desktop computers.
 
@@ -8,7 +8,7 @@ All software installations must comply with the organization's IT policies and s
 
 Employees should install only authorized applications to protect company devices and data.
 
-## 2. Before Installing Software
+
 
 Before installing an application, verify the following:
 
@@ -19,7 +19,7 @@ Before installing an application, verify the following:
 - You have the required installation permissions.
 - The application does not violate company security policies.
 
-## 3. Software Installation Procedure
+
 
 Follow these general steps:
 
@@ -35,7 +35,7 @@ Follow these general steps:
 
 **Important:** Do not install unauthorized applications or bypass company administrator restrictions.
 
-## 4. Installing Software Through an Approved Portal
+
 
 Some organizations provide a software center or application portal.
 
@@ -52,9 +52,9 @@ To install software through the portal:
 
 If the application is unavailable, contact IT support.
 
-## 5. Common Software Installation Problems and Solutions
 
-### Problem 1: Administrator Permission Required
+
+
 
 **Possible causes:**
 - The current account does not have administrator privileges.
@@ -68,7 +68,7 @@ If the application is unavailable, contact IT support.
 4. Provide the application name and business purpose.
 5. Wait for IT approval and installation assistance.
 
-### Problem 2: Installation Failed
+
 
 **Possible causes:**
 - Corrupted installation package.
@@ -85,7 +85,7 @@ If the application is unavailable, contact IT support.
 5. Restart the device and retry if permitted.
 6. Contact IT support if installation continues to fail.
 
-### Problem 3: Software Is Not Compatible With the Operating System
+
 
 **Possible causes:**
 - Application requires a newer operating system.
@@ -99,7 +99,7 @@ If the application is unavailable, contact IT support.
 3. Confirm whether the application supports your device architecture.
 4. Request an approved compatible version from IT support.
 
-### Problem 4: Insufficient Disk Space
+
 
 **Possible causes:**
 - Too many applications installed.
@@ -114,7 +114,7 @@ If the application is unavailable, contact IT support.
 4. Contact IT support if additional storage is required.
 5. Retry the installation after sufficient space is available.
 
-### Problem 5: Application Crashes After Installation
+
 
 **Possible causes:**
 - Incompatible application version.
@@ -130,7 +130,7 @@ If the application is unavailable, contact IT support.
 4. Record the crash message or error code.
 5. Contact IT support if the problem continues.
 
-## 6. Software Update Procedure
+
 
 Applications should be updated using approved update mechanisms.
 
@@ -143,7 +143,7 @@ Applications should be updated using approved update mechanisms.
 
 Do not disable security updates or install unofficial update packages.
 
-## 7. Software Security Guidelines
+
 
 - Install software only from approved sources.
 - Never use pirated or cracked software.
@@ -153,7 +153,7 @@ Do not disable security updates or install unofficial update packages.
 - Keep approved applications updated.
 - Report suspicious software or unexpected installation prompts to IT support.
 
-## 8. Software Installation Request Procedure
+
 
 If an employee needs software that is not available through the approved portal:
 
@@ -164,7 +164,7 @@ If an employee needs software that is not available through the approved portal:
 5. Wait for the IT department to review the request.
 6. Follow the installation instructions provided after approval.
 
-## 9. Escalation Procedure
+
 
 If the installation problem cannot be resolved, contact IT support.
 
@@ -180,6 +180,6 @@ Provide the following information:
 
 Do not share administrator passwords or other confidential credentials.
 
-## 10. Important Note
+
 
 This document provides general software installation guidance. The approved software catalogue, application licensing requirements, administrator permissions, and software approval process must be obtained from the organization's IT department.

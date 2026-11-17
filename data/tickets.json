@@ -38,5 +38,13 @@
         "status": "Open",
         "priority": "Medium",
         "created_at": "2026-11-13 13:26:32"
+    },
+    {
+        "ticket_id": "TKT5CF4B5F9",
+        "employee_name": "Not provided",
+        "issue_description": "LAPTOP NOT WORKING",
+        "status": "Open",
+        "priority": "Medium",
+        "created_at": "2026-11-17 11:23:04"
     }
 ]

@@ -9,7 +9,6 @@ user_query = """
 My laptop cannot connect to the company VPN.
 Also, check the current status of ticket TKT1002.
 """
-
 print("\n========== MULTI-TOOL TEST ==========")
 print("\nUser Request:")
 print(user_query)

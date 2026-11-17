@@ -1,12 +1,12 @@
-# Email Access and Troubleshooting Guide
 
-## 1. Overview
+
+
 
 Company email is used for internal communication, sharing documents, receiving notifications, and coordinating business activities.
 
 Employees must use their organization-approved email account and follow company security policies when accessing email services.
 
-## 2. Email Access Requirements
+
 
 Before accessing company email, ensure that:
 
@@ -16,7 +16,7 @@ Before accessing company email, ensure that:
 - You have access to the approved email application or webmail portal.
 - Multi-factor authentication (MFA) is configured if required.
 
-## 3. How to Access Company Email
+
 
 Follow these steps:
 
@@ -29,9 +29,9 @@ Follow these steps:
 
 **Important:** Always access company email through the official portal or application provided by the IT department.
 
-## 4. Common Email Problems and Solutions
 
-### Problem 1: Unable to Log In to Company Email
+
+
 
 **Possible causes:**
 - Incorrect username or password.
@@ -47,7 +47,7 @@ Follow these steps:
 4. Complete MFA verification again.
 5. If the account remains inaccessible, contact IT support.
 
-### Problem 2: Not Receiving Emails
+
 
 **Possible causes:**
 - Emails are being filtered into spam or junk folders.
@@ -64,7 +64,7 @@ Follow these steps:
 5. Ask the sender to verify the recipient address.
 6. Contact IT support if the problem continues.
 
-### Problem 3: Unable to Send Emails
+
 
 **Possible causes:**
 - No internet connection.
@@ -81,7 +81,7 @@ Follow these steps:
 5. Restart the email application.
 6. Contact IT support if sending continues to fail.
 
-### Problem 4: Email Application Not Synchronizing
+
 
 **Possible causes:**
 - Unstable internet connection.
@@ -97,7 +97,7 @@ Follow these steps:
 5. Check for approved application updates.
 6. Contact IT support if synchronization does not resume.
 
-### Problem 5: Email Attachments Cannot Be Opened
+
 
 **Possible causes:**
 - Unsupported file format.
@@ -113,7 +113,7 @@ Follow these steps:
 4. Ask the sender to resend the attachment if it appears corrupted.
 5. Contact IT support if a security restriction prevents access.
 
-### Problem 6: Suspicious or Phishing Email Received
+
 
 **Possible signs:**
 - Unexpected requests for passwords or MFA codes.
@@ -129,7 +129,7 @@ Follow these steps:
 4. Report the message using the organization's approved phishing-reporting process.
 5. Contact IT support if you have already clicked a suspicious link or shared information.
 
-## 5. Email Security Guidelines
+
 
 - Never share your email password.
 - Enable MFA if required by company policy.
@@ -139,7 +139,7 @@ Follow these steps:
 - Lock your device when unattended.
 - Report suspected phishing emails immediately.
 
-## 6. Escalation Procedure
+
 
 If the above troubleshooting steps do not resolve the problem, contact the IT support team.
 
@@ -155,6 +155,6 @@ Provide the following information:
 
 Never include your password or MFA verification code in a support request.
 
-## 7. Important Note
+
 
 This document provides general email troubleshooting guidance. The official email portal, supported applications, mailbox storage limits, attachment size limits, and organization-specific security policies must be obtained from the IT department.

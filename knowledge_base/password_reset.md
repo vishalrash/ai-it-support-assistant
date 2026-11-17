@@ -1,12 +1,12 @@
-# Password Reset Procedures
 
-## 1. Overview
+
+
 
 This document explains how employees can reset or change their company account passwords.
 
 Employees should follow the approved password recovery process to maintain account security and prevent unauthorized access.
 
-## 2. When Should You Reset Your Password?
+
 
 A password reset may be required when:
 
@@ -16,7 +16,7 @@ A password reset may be required when:
 - You suspect that someone else knows your password.
 - You receive a password expiration notification.
 
-## 3. Password Reset Procedure
+
 
 Follow these steps to reset your company account password:
 
@@ -31,7 +31,7 @@ Follow these steps to reset your company account password:
 
 **Important:** Use only the official password management portal provided by your IT department.
 
-## 4. Password Requirements
+
 
 When creating a new password:
 
@@ -43,9 +43,9 @@ When creating a new password:
 
 The exact password length and complexity requirements must be confirmed with the organization's IT department.
 
-## 5. Common Password Problems and Solutions
 
-### Problem 1: Password Reset Email Not Received
+
+
 
 **Possible causes:**
 - Incorrect registered email address.
@@ -59,7 +59,7 @@ The exact password length and complexity requirements must be confirmed with the
 3. Wait a few minutes and check again.
 4. If the email does not arrive, contact IT support.
 
-### Problem 2: Account Locked
+
 
 **Possible causes:**
 - Multiple unsuccessful login attempts.
@@ -72,7 +72,7 @@ The exact password length and complexity requirements must be confirmed with the
 3. Complete identity verification if requested.
 4. Contact IT support if the account remains locked.
 
-### Problem 3: New Password Is Rejected
+
 
 **Possible causes:**
 - Password does not meet complexity requirements.
@@ -86,7 +86,7 @@ The exact password length and complexity requirements must be confirmed with the
 3. Avoid reusing previous passwords.
 4. Try resetting the password again.
 
-### Problem 4: Unable to Log In After Password Reset
+
 
 **Possible causes:**
 - Incorrect password entered.
@@ -99,7 +99,7 @@ The exact password length and complexity requirements must be confirmed with the
 3. Update saved credentials in applications where necessary.
 4. Contact IT support if the issue continues.
 
-## 6. Security Guidelines
+
 
 - Never share your password or MFA verification code.
 - Do not use the same password for personal and company accounts.
@@ -108,7 +108,7 @@ The exact password length and complexity requirements must be confirmed with the
 - Report suspected unauthorized account access immediately.
 - Do not approve unexpected MFA requests.
 
-## 7. Escalation Procedure
+
 
 If the password reset process fails, contact the IT support team.
 
@@ -123,6 +123,6 @@ Provide the following information:
 
 Never send your current password or MFA verification code to IT support.
 
-## 8. Important Note
+
 
 This document provides general password reset guidance. The official password portal, identity verification methods, and exact password policy must be obtained from the organization's IT department.

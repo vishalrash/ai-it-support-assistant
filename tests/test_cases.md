@@ -1,5 +1,5 @@
-# AI-Powered IT Support Assistant
-## Phase 8 — Testing and Evaluation
+
+
 
 **LLM:** Qwen3 8B  
 **LLM Runtime:** Ollama  
@@ -9,15 +9,15 @@
 
 ---
 
-## 1. Testing Overview
+
 
 The AI-Powered IT Support Assistant was tested to verify knowledge retrieval, ticket management, multi-tool execution, conversation memory, and response reliability.
 
 The objective was to ensure that the assistant provides answers grounded in the available IT documents, retrieves ticket information correctly, and obtains explicit user approval before creating support tickets.
 
-## 2. Test Cases
 
-### TC01 — VPN Configuration
+
+
 
 **Input:**
 `My VPN is not connecting. How can I fix it?`
@@ -34,7 +34,7 @@ The assistant returned nine troubleshooting steps, including verifying credentia
 
 ---
 
-### TC02 — Password Reset
+
 
 **Input:**
 `How do I reset my password?`
@@ -51,7 +51,7 @@ The assistant provided password reset instructions from the password reset docum
 
 ---
 
-### TC03 — Ticket Status Retrieval
+
 
 **Input:**
 `Check ticket TKT1002.`
@@ -70,7 +70,7 @@ The assistant should retrieve the correct ticket details from the JSON database.
 
 ---
 
-### TC04 — Ticket Creation with Approval
+
 
 **Input:**
 `Create a support ticket for my laptop overheating.`
@@ -90,7 +90,7 @@ The application requested approval and successfully created a ticket after YES w
 
 ---
 
-### TC05 — Ticket Creation Cancellation
+
 
 **Input:**
 `Create a support ticket for my laptop overheating.`
@@ -107,7 +107,7 @@ The application should cancel ticket creation and avoid saving a new ticket.
 
 ---
 
-### TC06 — Unknown Question
+
 
 **Input:**
 `What is the company's annual revenue and who is its CEO?`
@@ -122,7 +122,7 @@ The assistant should not invent company information that is unavailable in the I
 
 ---
 
-### TC07 — Multi-Tool Workflow
+
 
 **Input:**
 `My VPN is not connecting. Also, check ticket TKT1002.`
@@ -141,7 +141,7 @@ The assistant returned VPN troubleshooting instructions from `vpn_setup.md` and 
 
 ---
 
-### TC08 — Incorrect Ticket ID
+
 
 **Input:**
 `Check the status of ticket TKT9999.`
@@ -156,7 +156,7 @@ The assistant should report that the ticket does not exist.
 
 ---
 
-### TC09 — Hallucination Prevention
+
 
 **Input:**
 `What is our company's internal VPN server address?`
@@ -173,7 +173,7 @@ The assistant should not invent an internal VPN server address.
 
 ---
 
-### TC10 — Follow-Up Conversation Memory
+
 
 **Initial Input:**
 `My laptop is running very slowly.`
@@ -197,7 +197,7 @@ The assistant reused the original grounded RAG result instead of generating a ne
 
 ---
 
-## 3. Overall Test Summary
+
 
 | Test ID | Test Scenario | Result |
 |---|---|---|
@@ -216,7 +216,7 @@ The assistant reused the original grounded RAG result instead of generating a ne
 **Passed:** 10  
 **Failed:** 0
 
-## 4. Conclusion
+
 
 The testing process verified the main functionality of the AI-Powered IT Support Assistant.
 

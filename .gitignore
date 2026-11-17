@@ -9,11 +9,11 @@ logs/
 .pytest_cache/
 .streamlit/secrets.toml
 *.log
-# Streamlit secrets
+
 .streamlit/secrets.toml
 
-# Logs
+
 *.log
 
-# User feedback data
+
 data/feedback.json

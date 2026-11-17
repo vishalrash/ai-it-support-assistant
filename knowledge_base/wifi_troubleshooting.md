@@ -1,12 +1,12 @@
-# Office Wi-Fi Troubleshooting Guide
 
-## 1. Overview
+
+
 
 Office Wi-Fi provides employees with wireless access to the organization's internal network and internet services.
 
 Employees must connect using the approved office wireless network and follow the organization's network security policies.
 
-## 2. Wi-Fi Connection Requirements
+
 
 Before connecting to office Wi-Fi, ensure that:
 
@@ -18,7 +18,7 @@ Before connecting to office Wi-Fi, ensure that:
 
 **Important:** Obtain the official Wi-Fi network name and credentials from the IT department. Never use an unknown or unauthorized wireless network.
 
-## 3. How to Connect to Office Wi-Fi
+
 
 Follow these steps:
 
@@ -31,9 +31,9 @@ Follow these steps:
 7. Open a browser and verify internet connectivity.
 8. Access the required company resources.
 
-## 4. Common Wi-Fi Problems and Solutions
 
-### Problem 1: Unable to Find the Office Wi-Fi Network
+
+
 
 **Possible causes:**
 - Wi-Fi is disabled on the device.
@@ -49,7 +49,7 @@ Follow these steps:
 5. Restart the device.
 6. Contact IT support if the network remains unavailable.
 
-### Problem 2: Incorrect Wi-Fi Password
+
 
 **Possible causes:**
 - Incorrect password entered.
@@ -64,7 +64,7 @@ Follow these steps:
 4. Reconnect using the current credentials.
 5. Contact IT support if authentication continues to fail.
 
-### Problem 3: Connected to Wi-Fi but No Internet Access
+
 
 **Possible causes:**
 - Internet service interruption.
@@ -81,7 +81,7 @@ Follow these steps:
 5. Check whether the issue affects only one device or multiple devices.
 6. Contact IT support if internet access remains unavailable.
 
-### Problem 4: Wi-Fi Connection Keeps Disconnecting
+
 
 **Possible causes:**
 - Weak wireless signal.
@@ -97,7 +97,7 @@ Follow these steps:
 4. Check for approved wireless adapter driver updates.
 5. Contact IT support if frequent disconnections continue.
 
-### Problem 5: Wi-Fi Is Slow
+
 
 **Possible causes:**
 - Too many devices connected to the network.
@@ -114,7 +114,7 @@ Follow these steps:
 5. Check whether other employees are experiencing the same issue.
 6. Contact IT support if network performance remains poor.
 
-### Problem 6: Unable to Access Internal Company Resources
+
 
 **Possible causes:**
 - Device is not connected to the correct network.
@@ -130,7 +130,7 @@ Follow these steps:
 4. Try accessing another approved internal resource.
 5. Contact IT support if access continues to fail.
 
-## 5. Wi-Fi Security Guidelines
+
 
 - Connect only to authorized office wireless networks.
 - Never share office Wi-Fi credentials with unauthorized individuals.
@@ -140,7 +140,7 @@ Follow these steps:
 - Keep your device's security software enabled.
 - Follow company policies when using public Wi-Fi.
 
-## 6. Escalation Procedure
+
 
 If the above troubleshooting steps do not resolve the issue, contact the IT support team.
 
@@ -158,6 +158,6 @@ Provide the following information:
 
 Never include the office Wi-Fi password in a support request.
 
-## 7. Important Note
+
 
 This document provides general office Wi-Fi troubleshooting guidance. The official wireless network names, credentials, access point locations, network configuration, and organization-specific access policies must be obtained from the IT department.

@@ -11,13 +11,9 @@ def should_continue(state: ITSupportState):
         return "tools"
     return END
 def route_after_tools(state: ITSupportState):
-
-    # Ticket approval always takes priority.
     if state.get("awaiting_confirmation", False):
         return "approval"
-
     messages = state["messages"]
-
     last_ai_message = next(
         (
             message
@@ -27,29 +23,22 @@ def route_after_tools(state: ITSupportState):
         ),
         None
     )
-
     if not last_ai_message:
         return "agent"
-
     tool_names = [
         call["name"]
         for call in last_ai_message.tool_calls
     ]
-
-    # Single knowledge-base search:
     if (
         tool_names == ["knowledge_base_search"]
         and isinstance(messages[-1], ToolMessage)
     ):
         return "grounded_answer"
-
-    # Knowledge-base search + ticket status:
     if (
         "knowledge_base_search" in tool_names
         and "ticket_status_lookup" in tool_names
     ):
         return "multi_tool_answer"
-
     return "agent"
 def grounded_answer_node(state: ITSupportState):
     """
@@ -57,7 +46,6 @@ def grounded_answer_node(state: ITSupportState):
     without asking the LLM to rewrite it.
     """
     last_message = state["messages"][-1]
-
     return {
         "messages": [
             AIMessage(content=last_message.content)
@@ -68,9 +56,7 @@ def multi_tool_answer_node(state: ITSupportState):
     Combine knowledge-base and ticket-status results
     without allowing the LLM to rewrite them.
     """
-
     messages = state["messages"]
-
     last_ai_message = next(
         (
             message
@@ -80,46 +66,35 @@ def multi_tool_answer_node(state: ITSupportState):
         ),
         None
     )
-
     if not last_ai_message:
         return {
             "messages": [
                 AIMessage(content="Unable to retrieve tool results.")
             ]
         }
-
-    # Map tool call IDs to their names.
     tool_names = {
         call["id"]: call["name"]
         for call in last_ai_message.tool_calls
     }
-
-    # Collect corresponding tool results.
     results = {}
-
     for message in messages:
         if (
             isinstance(message, ToolMessage)
             and message.tool_call_id in tool_names
         ):
             results[tool_names[message.tool_call_id]] = message.content
-
     sections = []
-
     if "knowledge_base_search" in results:
         sections.append(
             "IT KNOWLEDGE BASE RESULT:\n\n"
             + results["knowledge_base_search"]
         )
-
     if "ticket_status_lookup" in results:
         sections.append(
             "TICKET STATUS RESULT:\n\n"
             + results["ticket_status_lookup"]
         )
-
     final_answer = ("\n\n" + ("-" * 50) + "\n\n").join(sections)
-
     return {
         "messages": [
             AIMessage(content=final_answer)

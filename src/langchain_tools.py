@@ -3,7 +3,6 @@ from tools import (
     get_ticket_status,
     create_support_ticket
 )
-
 from rag_pipeline import answer_question
 @tool
 def knowledge_base_search(query: str) -> str:
@@ -12,9 +11,7 @@ def knowledge_base_search(query: str) -> str:
     a grounded answer with its source documents.
     """
     answer, sources = answer_question(query)
-
     source_text = ", ".join(sources) if sources else "No sources found"
-
     return (
         f"Grounded IT Support Answer:\n{answer}\n\n"
         f"Sources: {source_text}"
@@ -30,7 +27,6 @@ def ticket_status_lookup(ticket_id: str) -> str:
 def request_support_ticket(issue_description: str) -> str:
     """
     Request creation of a new IT support ticket.
-
     This tool only prepares the ticket request.
     The application must obtain explicit user approval
     before actually creating and saving the ticket.
